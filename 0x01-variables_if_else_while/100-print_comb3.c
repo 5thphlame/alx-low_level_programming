@@ -1,36 +1,30 @@
 #include <stdio.h>
 
 /**
- * main - Prints numbers between 00 to 89.
+ * main - prints all possible combinatios of single-digit numbers.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i, e;
+	int c;
+	int ci; /*count decimas*/
 
-	i = 48;
-	e = 48;
-
-	while (e < 58)
+	c = 48;
+	for (ci = 48; (ci < 58); ci++)
 	{
-		i = 48;
-		while (i < 58)
-		{
-			if (e != i && e == 56)
-			{
-				putchar(e);
-				putchar(i);
-				if (i == 57 && e == 56)
-				{
-					break;
-				}
-				putchar(',');
-				putchar(' ');
-			}
-			i++;
-		}
-		e++;
+	for (c = 48; c < 58; c++)
+	{
+	if (c > ci)
+	{
+	putchar(ci);
+	putchar(c);
+	if ((ci != 56) || (c != 57))
+	{
+	putchar(' ');
+	}
+	}
+	}
 	}
 	putchar('\n');
 	return (0);
