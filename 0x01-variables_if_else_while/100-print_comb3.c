@@ -21,6 +21,7 @@ int main(void)
 	putchar(c);
 	if ((ci != 56) || (c != 57))
 	{
+	putchar(',');
 	putchar(' ');
 	}
 	}
