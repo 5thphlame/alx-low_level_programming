@@ -4,7 +4,7 @@
 /**
  * main - fizzbuzz print out the console 1-100.
  * Return: void.
- * */
+ */
 int main(void)
 {
 	int i;
