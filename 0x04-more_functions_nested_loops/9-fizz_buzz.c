@@ -2,16 +2,16 @@
 #include <stdlib.h>
 
 /**
- * main - fizzbuzz print out the console 1-100.
+ * main - fizzbuzz print ot he console 1-100.
  * Return: void.
  */
 int main(void)
 {
 	int i;
 
-	for (i = 1; i < 101; ++i)
+	for (i = 1; i <= 100; ++i)
 	{
-		if (i % 15 == 0)
+		if ((i % 3 == 0) && (n % 5 == 0))
 			printf("FizzBuzz");
 		else if (i % 3 == 0)
 			printf("Fizz");
@@ -22,8 +22,8 @@ int main(void)
 		
 		if (i < 100)
 			printf(" ");
+		else
+			printf("\n");
 	}
-	printf("\n");
-	
 	return (0);
 }
