@@ -1,8 +1,9 @@
 #include <stdio.h>
-#include <stdlib.h>
-
 /**
- * main - fizzbuzz print ot he console 1-100.
+ * main - entrypoint
+ *
+ * Description: prints FizzBuzz
+ *
  * Return: void.
  */
 int main(void)
