@@ -6,12 +6,12 @@
  *
  * Return: pointer to destination string.
  */
-char *_strcat(char*dest, char*src)
+char *_strcat(char *dest, char *src)
 {
 	int length, j;
 
 	length = 0;
-	while (dest[lenght] != '\0')
+	while (dest[length] != '\0')
 	{
 		length++;
 	}
@@ -19,6 +19,6 @@ char *_strcat(char*dest, char*src)
 	{
 		dest[length] = src[j];
 	}
-	dest[length] = '0\';
+	dest[length] = '\0';
 	return (dest);
 }
